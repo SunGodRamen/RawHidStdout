@@ -1,0 +1,37 @@
+# Exclude all .dll and .pdb files in the thirdparty directory
+thirdparty/**/*.dll
+thirdparty/**/*.pdb
+
+# Build files
+x64/Debug/
+x64/Release/
+RawHidDriver/x64/Debug/
+RawHidDriver/x64/Release/
+
+# Intermediate files
+*.obj
+*.tlog
+*.idb
+*.pdb
+.ilk
+*.iobj
+*.ipdb
+*.recipe
+*.log
+*.lastbuildstate
+
+# User specific
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Generated
+*.aps
+ipch/
+*.vsp
+*.vspx
+
+# Dependency Databases
+vc143.idb
+vc143.pdb
