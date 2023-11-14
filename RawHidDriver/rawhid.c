@@ -12,7 +12,6 @@ hid_device* get_handle(hid_usage_info* usage_info) {
         write_log(LOGLEVEL_ERROR, "RAWHID - Usage info is NULL");
         return NULL; // Return NULL to indicate failure
     }
-
     write_log_format(LOGLEVEL_INFO, "RAWHID - Attempting to open HID device with Vendor ID: 0x%x, Product ID: 0x%x",
         usage_info->vendor_id, usage_info->product_id);
     // Open the HID device using vendor and product IDs

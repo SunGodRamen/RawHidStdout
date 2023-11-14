@@ -183,7 +183,10 @@ static void write_to_log_file(LogLevel level, const char* message) {
         break;
     }
 
-    if (level >= currentLogLevel) {
+    // Print to console
+    printf("%s %s\n", levelStr, message);
+
+    if (level <= currentLogLevel) {
         return;
     }
 
